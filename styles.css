@@ -45,12 +45,19 @@ body {
 }
 
 .article {
+    margin: auto;
+    width: 70%; 
 }
 .article figure {
+    margin-left: 0;
 }
 .article figure img {
+    width: 90%;
 }
 .article figure figcaption {
+    margin-left: -12em;
+    width: 11.5em;
+    float: left;
 }
 
 #map {
