@@ -73,6 +73,7 @@ body {
 }
 
 a:link, a:visited {
+    color: violet;
 }
 .gray, .gray a:link, .gray a:visited {
     color: gray;
