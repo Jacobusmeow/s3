@@ -8,20 +8,22 @@ body {
     max-width: 1280px;
     margin: auto;
     font-family: "Open Sans";
-    border: 4px solid violet;
+    
 }
-
+#wrapper{
+    max-width: 85%;
+    margin: auto;
+}
 #header {
     
     text-align: center;
-    background-color: yellow;
     background-image: url("images/header.jpg");
-    border: 4px solid pink;
+    border: 4px solid grey;
 }
 #header h2 {
     font-size: 4em;
     margin: 0;
-    padding: 1em 0;
+    padding: 2em 0 3em;
 }
 #header h3 {
     font-size: 3em;
@@ -37,7 +39,7 @@ body {
     text-align: center;
 }
 .author img {
-    border: 4px solid pink;
+    border: 4px solid grey;
     border-radius: 50%;
     margin-top: -50px;
 }
@@ -81,7 +83,7 @@ a:link, a:visited {
     color: gray;
 }
 .white, .white a:link, .white a:visited {
-    color: white;
+    color: #222222;
 }
 
 @media only screen and (max-width: 900px) {
