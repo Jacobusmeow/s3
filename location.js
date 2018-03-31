@@ -1,3 +1,9 @@
+/*
+*
+* Leaflet location map for the New Zealand project
+*
+*/
+
 window.addEventListener("load", function () {
     // DIV-Element mit id="map" im Dokument suchen und aus dessen data-* Attributen Koordinaten und Titel lesen
     var div = document.getElementById("map");
@@ -11,7 +17,8 @@ window.addEventListener("load", function () {
     // OpenStreetMap WMTS Hintergrundkarte mit Copyright-Hinweis hinzufügen
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+    }).addTo(map);
 
-// Positionsmarker mit Titel als Popup hinzufügen und Popup öffnen
-L.marker([lat, lng]).addTo(map).bindPopup(tit).openPopup();
+    // Positionsmarker mit Titel als Popup hinzufügen und Popup öffnen
+    L.marker([lat, lng]).addTo(map).bindPopup(tit).openPopup();
+}); 
