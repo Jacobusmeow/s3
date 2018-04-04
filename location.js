@@ -12,13 +12,13 @@ window.addEventListener("load", function () {
     var tit = div.getAttribute("data-title");
 
     // Leaflet Karte im gefundenen DIV erstellen und auf die Koordinate zoomen
-    var map = L.map(div).setView([lat, lng], 13);
+    var map = L.map(div).setView([-43.4518895, 170.1790135], 13);
 
     // OpenStreetMap WMTS Hintergrundkarte mit Copyright-Hinweis hinzufügen
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     // Positionsmarker mit Titel als Popup hinzufügen und Popup öffnen
-    L.marker([lat, lng]).addTo(map).bindPopup(tit).openPopup();
+    L.marker([-43.4518895, 170.1790135]).addTo(map).bindPopup(tit).openPopup();
 }); 
