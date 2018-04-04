@@ -84,7 +84,8 @@ body {
 }
 
 a:link, a:visited {
-    color: violet;
+    color: grey;
+    text-decoration: none; 
 }
 .gray, .gray a:link, .gray a:visited {
     color: gray;
